@@ -1,0 +1,12 @@
+output.elasticsearch:
+  # Boolean flag to enable or disable the output module.
+  #enabled: true
+
+  # Array of hosts to connect to.
+  # Scheme and port can be left out and will be set to the defaul>  # In case you specify and additional path, the scheme is requir>  # IPv6 addresses should always be defined as: https://[2001:db8>  hosts: ["10.1.0.5:9200"]
+  username: "elastic"
+  password: "changeme"
+  
+# Starting with Beats version 6.0.0, the dashboards are loaded vi># This requires a Kibana endpoint configuration.
+setup.kibana:
+  host: "10.1.0.5:5601"
